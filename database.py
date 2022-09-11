@@ -10,7 +10,6 @@ db = client[DATABASE_NAME]
 instance = Instance(db)
 
 
-@Instance.register
 class Data(Document):
     id = fields.StrField(attribute='_id')
     channel = fields.StrField()
