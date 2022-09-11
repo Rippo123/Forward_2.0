@@ -9,7 +9,6 @@ client = AsyncIOMotorClient(DATABASE_URI)
 db = client[DATABASE_NAME]
 instance = Instance(db)
 
-
 @instance.register
 class Data(Document):
     id = fields.StrField(attribute='_id')
